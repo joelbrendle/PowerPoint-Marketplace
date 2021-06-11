@@ -254,7 +254,7 @@ button {
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #db5660;
+    color: #4289d5;
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.9rem;
@@ -267,7 +267,7 @@ button {
 	width: 100%;
 	float: left;
 	font-size: 30pt;
-	color: #db5660;
+	color: #4289d5;
 }
 
 .mens_text{
@@ -286,26 +286,26 @@ button {
 }
 
 .buy_bt{ 
-	width: 32%;
+	width: 50%;
 	height: 50px;
 	color: #ffffff;
-	background-color: #ff4e5b;
+	background-color: #4289d5;
 	color: #ffffff;
 	font-size: 16pt;
  }
 
  .more_bt{
-	width: 32%;
+	width: 28%;
 	height: 50px;
 	color: #ffffff;
 	background-color: #ffffff;
-	color: #ff4e5b;
+	color: #4289d5;
 	font-size: 16pt;
 	margin-left: 25px;
  }
 
 .banner_taital{
-	width: 100%;
+	width: 130%;
 	float: left;
 	margin-top: 85px;
 }
@@ -385,6 +385,16 @@ body{
 	font-weight: 400;
 	margin-left: 0px;
     padding-bottom: 30px;
+}
+
+.info_text {
+	width: 100%;
+	float: left;
+	font-size: 14pt;
+	color: #0c0116;
+	font-weight: 400;
+    margin-left: 0px !important;
+    margin-bottom: 0 !important;
 }
 
 .collection_section_2{
@@ -468,7 +478,7 @@ body{
 	width: 32%;
 	height: 50px;
 	color: #ffffff;
-	background-color: #ff4e5b;
+	background-color: #4289d5;
 	color: #ffffff;
 	font-size: 16pt;	
 	margin-top: 35px;
@@ -494,7 +504,7 @@ body{
     text-align: center; 
     font-weight: bold; 
     font-size: 40px; 
-    background-color: #db5660;
+    background-color: #4289d5;
     padding: 30px 0px;  
 }
 
@@ -519,7 +529,7 @@ body{
 	width: 50%;
 	height: 50px;
 	color: #ffffff;
-	background-color: #ff4e5b;
+	background-color: #4289d5;
 	color: #ffffff;
 	font-size: 16pt;	
 	margin-top: 35px;
@@ -528,7 +538,7 @@ body{
 .gallery_section{
 	width: 100%;
 	float: left;
-	background-color: #ff4e5b;
+	background-color: #4289d5;
 	height: auto;
 
 }
@@ -634,7 +644,7 @@ body{
     text-align: center;
 }
 .main_bt {
-    background: #ff4e5b;
+    background: #4289d5;
     border: none;
     width: 170px;
     height: 58px;
@@ -747,7 +757,7 @@ a:hover {
     color: #ffffff;
     text-align: center;
     padding: 10px 0px;
-    background-color: #ff4e5b;
+    background-color: #4289d5;
     font-family: Poppins;
 }
 
@@ -777,9 +787,9 @@ a:hover {
 .subscribr_bt {
     width: 80%;
     float: right;
-    background-color: #ff4e5b;
+    background-color: #4289d5;
     font-size: 13pt;
-    height: 50px;
+    height: 52px;
     color: #ffffff;
 }
 
@@ -794,4 +804,9 @@ a:hover {
     width: 100%;
     height: auto;
     background: #0c0116;
+}
+
+/* Title Box */
+#title_box {
+    margin-left: 30px;
 }
