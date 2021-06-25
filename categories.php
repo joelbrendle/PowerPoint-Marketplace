@@ -51,7 +51,7 @@
 		<div class="row">
 			<h1 class="new_text" style="color: black; margin-left: 20px;"><strong>Alle Kategorien</strong></h1>
 			<?php 
-				for($i=1; $i<count($fach); $i++) {
+				for($i=0; $i<count($fach); $i++) {
 					?>
 						<div class="col-sm-4">
 							<a href="powerpoints.php?class=<?php echo $i; ?>">

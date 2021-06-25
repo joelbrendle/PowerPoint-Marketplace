@@ -1,14 +1,10 @@
 <?php
 
     include("db.php");
-    $uploaddir = "../storage/powerpoints/";
-    $uploadfile = $uploaddir . basename($_FILES['ppfile']['name']);
-
-    function getUserID() {
-        
-    }
 
     if($_POST["uploadpp"]) {
+        $uploaddir = "../storage/powerpoints/";
+        $uploadfile = $uploaddir . basename($_FILES['ppfile']['name']);    
 
         $sql = "INSERT INTO powerpoints (title, tinyinfo, fach, filename, created, author, img) VALUES ('" . $_POST['title'] . "','" . $_POST['desc'] . "','" . $_POST['fach'] . "','" . basename($_FILES['ppfile']['name']) . "','" . date('Y:m:d') . "','";
         

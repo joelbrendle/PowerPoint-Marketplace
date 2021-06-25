@@ -37,7 +37,7 @@
                               <input type="text" class="email-bt" placeholder="Username / E-Mail" name="username" required="required">
                             </div>
                             <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Password" name="password" required="required">
+                              <input type="password" class="email-bt" placeholder="Password" name="password" required="required">
                             </div> 
 							<div class="send_btn">
 									<button type="submit" class="main_bt">Send</button>
@@ -61,10 +61,10 @@
                               <input type="text" class="email-bt" placeholder="E-Mail" name="mail" required="required">
                             </div>
                             <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Password" name="password" required="required">
+                              <input type="password" class="email-bt" placeholder="Password" name="password" required="required">
                             </div>
                             <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Password" name="password" required="required">
+                              <input type="password" class="email-bt" placeholder="Password" name="password" required="required">
                             </div>
 							<div class="send_btn">
 								<button type="submit" class="main_bt">Send</button>

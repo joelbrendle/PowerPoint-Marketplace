@@ -8,6 +8,7 @@
 
         if ($mysqli->query($sql) == TRUE) {
             echo "nice register";
+            header("Location: ../profile.php");
         } else {
             echo "Error: " . $sql . "<br>" . $mysqli->error;
         }

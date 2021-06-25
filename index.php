@@ -45,41 +45,22 @@
     	<div class="container">
     		<div class="row">
 				<h1 class="new_text" style="color: white; margin-left: 20px;"><strong>Beliebteste Kategorien</strong></h1>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Geographie</p>
-    				</div>
-    			</div>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Geschichte</p>
-    				</div>
-    			</div>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Englisch</p>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="row">
-				<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Geographie</p>
-    				</div>
-    			</div>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Geschichte</p>
-    				</div>
-    			</div>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Englisch</p>
-    				</div>
-    			</div>
+    			<?php 
+					for($i=1; $i<=6; $i++) {
+						?>
+							<div class="col-sm-4">
+								<a href="powerpoints.php?class=<?php echo $i; ?>">
+									<div class="best_shoes">
+										<p class="best_text"><?php echo $fach[$i]; ?></p>
+									</div>
+								</a>
+							</div>
+						<?php
+					}
+				?>
     		</div>
     		<div class="buy_now_bt">
-    			<a href="categories.html"><button class="buy_text" style="width:200px">&nbsp;Mehr Kategorien&nbsp;</button></a>
+    			<a href="categories.php"><button class="buy_text" style="width:200px">&nbsp;Mehr Kategorien&nbsp;</button></a>
     		</div>
     	</div>
     </div>
