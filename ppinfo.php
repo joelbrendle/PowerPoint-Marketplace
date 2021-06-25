@@ -15,7 +15,7 @@
 
         </div>
     </div>
-</section>			
+</section>
 			</div>
 		</div>
 	</div>
@@ -156,16 +156,16 @@
 							</div>
 							<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:680px;height:510px;overflow:hidden;">
 								<div>
-									<img data-u="image" src="storage/images/<?php echo $row["img"]; ?>/Slide1.png" />
+									<img data-u="image" src="storage/images/<?php echo $row["img"]; ?>/Slide1.PNG" />
 								</div>
 								<div>
-									<img data-u="image" src="storage/images/<?php echo $row["img"]; ?>/Slide2.png" />
+									<img data-u="image" src="storage/images/<?php echo $row["img"]; ?>/Slide2.PNG" />
 								</div>
 								<div>
-									<img data-u="image" src="storage/images/<?php echo $row["img"]; ?>/Slide3.png" />
+									<img data-u="image" src="storage/images/<?php echo $row["img"]; ?>/Slide3.PNG" />
 								</div>
 								<div>
-									<img data-u="image" src="storage/images/<?php echo $row["img"]; ?>/Slide4.png" />
+									<img data-u="image" src="storage/images/<?php echo $row["img"]; ?>/Slide4.PNG" />
 								</div>
 							</div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">responsive slider</a>
 							<!-- Bullet Navigator -->
