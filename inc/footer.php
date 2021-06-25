@@ -7,14 +7,14 @@
     		        </div>
 					<div class="col-sm-6 col-lg-3">
     					<div><a href="#"><img src="images/Untitled.png" style="height: 100px;"></a></div>
-    		        	<p class="dummy_text">Download Free PowerPoints</p>
+    		        	<p class="dummy_text">Gratis PowerPoints Herunterladen</p>
     				</div>
     		        <div class="col-sm-4 col-md-6 col-lg-3">
     				    <h2 class="shop_text">Über uns</h2>
     				    <div class="delivery_text">
     				    	<ul>
-    				    		<li>About us</li>
-    				    		<li>Contact us</li>
+    				    		<li>Über uns</li>
+    				    		<li>Kontakt</li>
     				    		<li>Datenschutz</li>
     				    		<li>AGBs</li>
     				    	</ul>
@@ -25,9 +25,9 @@
 						<div class="delivery_text">
     				    	<ul>
     				    		<li>Kategorien</li>
-    				    		<li>Top</li>
-    				    		<li>New</li>
-    				    		<li>Random</li>
+    				    		<li>Beste</li>
+    				    		<li>Neuste</li>
+    				    		<li>Zufällig</li>
     				    		<li>Suche</li>
     				    	</ul>
     				    </div>

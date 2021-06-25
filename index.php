@@ -23,9 +23,9 @@
 							<div class="banner_taital">
 								<h1 class="mens_text">PowerPoint </h1>
 								<h1 class="banner_text"><strong>Marketplace</strong></h1>
-								<p class="lorem_text">Download Free PowerPoints</p>
-								<button class="buy_bt">Categories</button>
-								<button class="more_bt">Top</button>
+								<p class="lorem_text">Gratis PowerPoints Herunterladen</p>
+								<button class="buy_bt">Kategorien</button>
+								<button class="more_bt">Best</button>
 							</div>
 					<div class="col-sm-5">
 						<div class="shoes_img"></div>
@@ -79,7 +79,7 @@
     			</div>
     		</div>
     		<div class="buy_now_bt">
-    			<a href="categories.html"><button class="buy_text">&nbsp;Mehr Kategorien&nbsp;</button></a>
+    			<a href="categories.html"><button class="buy_text" style="width:200px">&nbsp;Mehr Kategorien&nbsp;</button></a>
     		</div>
     	</div>
     </div>

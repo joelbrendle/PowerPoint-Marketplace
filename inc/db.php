@@ -2,7 +2,7 @@
     $dbhost = 'localhost';
     $dbuser = 'root';
     $dbpass = '';
-    $dbname = 'blogjoel_ppmarketplace';
+    $dbname = 'powerpoint-marketplace';
     $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
     
     if($mysqli->connect_errno ) {

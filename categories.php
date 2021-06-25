@@ -25,38 +25,19 @@
     	<div class="container">
     		<div class="row">
 				<h1 class="new_text" style="color: white; margin-left: 20px;"><strong>Beliebteste Kategorien</strong></h1>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Geographie</p>
-    				</div>
-    			</div>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Geschichte</p>
-    				</div>
-    			</div>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Englisch</p>
-    				</div>
-    			</div>
-    		</div>
-    		<div class="row">
-				<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Wirtschaft</p>
-    				</div>
-    			</div>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Französisch</p>
-    				</div>
-    			</div>
-    			<div class="col-sm-4">
-    				<div class="best_shoes">
-    					<p class="best_text">Deutsch</p>
-    				</div>
-    			</div>
+				<?php 
+					for($i=1; $i<=6; $i++) {
+						?>
+							<div class="col-sm-4">
+								<a href="powerpoints.php?class=<?php echo $i; ?>">
+									<div class="best_shoes">
+										<p class="best_text"><?php echo $fach[$i]; ?></p>
+									</div>
+								</a>
+							</div>
+						<?php
+					}
+				?>
     		</div>
     	</div>
     </div>
@@ -69,106 +50,19 @@
 	<div class="container">
 		<div class="row">
 			<h1 class="new_text" style="color: black; margin-left: 20px;"><strong>Alle Kategorien</strong></h1>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Geographie</p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Geschichte</p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Englisch</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Wirtschaft</p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Französisch</p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Deutsch</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Mathematik</p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Physik</p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Chemie</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Spanisch</p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">ABU</p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Italienisch</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Sport</p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Religion</p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Musik</p>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Hauswirtschaft</p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Mensch und Umwelt</p>
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="all-cat">
-					<p class="best_text">Informatik</p>
-				</div>
-			</div>
+			<?php 
+				for($i=1; $i<count($fach); $i++) {
+					?>
+						<div class="col-sm-4">
+							<a href="powerpoints.php?class=<?php echo $i; ?>">
+								<div class="all-cat">
+									<p class="best_text"><?php echo $fach[$i]; ?></p>
+								</div>
+							</a>
+						</div>
+					<?php
+				}
+			?>
 		</div>
 		&nbsp;
 	</div>

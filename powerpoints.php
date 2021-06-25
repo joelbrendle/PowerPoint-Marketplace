@@ -30,6 +30,8 @@
 						$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 ORDER BY downloads DESC";
 					} elseif (isset($_GET['cat']) && $_GET['cat'] == 'new') {
 						$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 ORDER BY created DESC";
+					} elseif (isset($_GET['class'])) {
+						$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 AND fach LIKE ".$_GET['class'];
 					} else {
 						$sql = "SELECT * FROM powerpoints WHERE active LIKE 1";
 					}
