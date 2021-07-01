@@ -2,7 +2,7 @@
 
     $fach = [
         0 => "Anderes Fach",
-        1 => "Geographie",
+        1 => "Geographie 🌍",
         2 => "Geschichte",
         3 => "Englisch",
         4 => "Wirtschaft",

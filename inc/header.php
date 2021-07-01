@@ -35,6 +35,7 @@
       <?php session_start(); ?>
       <?php include("inc/db.php"); ?>
       <?php include("inc/class.php"); ?>
+      <?php include("inc/author.php"); ?>
       <script src="../js/script.js"></script> 
    </head>
    <!-- body -->

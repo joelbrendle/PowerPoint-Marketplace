@@ -42,7 +42,22 @@
 					<div class="container">
 						<h1 class="new_text"><strong><?php echo $row["title"] . " - " . $fach[$row["fach"]]; ?></strong></h1>
 						<p class="consectetur_text"><?php echo $row["tinyinfo"]; ?></p>
-
+						<ul style="">
+							<p style="float:left;"><span>Author: <?php echo getAuthor($row["author"]); ?></span></p>
+						</ul>
+						<ul style=""><p style="float:left;">Bewertung:
+							<?php for($i=0; $i<$row["stars"]; $i++) { ?>
+								<a href="#"><img src="images/star-icon.png"></a>
+							<?php } ?>
+							</p>
+						</ul>
+						<ul style="">
+							<p style="float:left;"><span>Downloads: <?php echo $row["downloads"]; ?></span> <img src="images/download.svg"></p>
+						</ul>
+						<ul style="">
+							<p style="float:left;"><span>Erstelldatum: <?php echo $row["created"]; ?></span></p>
+						</ul>
+						<br>&nbsp;<br><br><br>
 						<form action="inc/download_form.php" method="POST">
 							<input type="hidden" name="download" value="login">
 							<input type="hidden" name="id" value="<?php echo $row['id']; ?>">
@@ -149,12 +164,12 @@
 							.jssora093.jssora093dn {opacity:.6;}
 							.jssora093.jssora093ds {opacity:.3;pointer-events:none;}
 						</style>
-						<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:680px;height:510px;overflow:hidden;visibility:hidden;">
+						<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:680px;height:400px;overflow:hidden;visibility:hidden;">
 							<!-- Loading Screen -->
 							<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
 								<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
 							</div>
-							<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:680px;height:510px;overflow:hidden;">
+							<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:680px;height:400px;overflow:hidden;">
 								<div>
 									<img data-u="image" src="storage/images/<?php echo $row["img"]; ?>/Slide1.PNG" />
 								</div>

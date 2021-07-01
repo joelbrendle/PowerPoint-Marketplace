@@ -5,7 +5,7 @@
     if($_POST["login"]) {
 
         session_start();
-
+        
         $sql = "SELECT * FROM users WHERE (username LIKE '". $_POST['username'] . "' AND password LIKE '" . $_POST['password']. "') "./*OR (username LIKE '". $_POST['mail'] . "' AND password LIKE '" . $_POST['password']. "')*/";";
 
         $result = $mysqli->query($sql);

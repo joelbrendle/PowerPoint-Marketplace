@@ -56,7 +56,7 @@
 						<div class="col-sm-4">
 							<a href="powerpoints.php?class=<?php echo $i; ?>">
 								<div class="all-cat">
-									<p class="best_text"><?php echo $fach[$i]; ?></p>
+									<p class="best_text" style="color:white;"><?php echo $fach[$i]; ?></p>
 								</div>
 							</a>
 						</div>
