@@ -1,0 +1,24 @@
+ToDo:
+
+- account: see my pps
+- account: edit my pps
+- ppinfo: click on author
+- upload: attach pictures
+- upload: chose class
+- login / register: recaptcha
+- register: email validation
+- ppinfo: better preview
+- categories: anzahl pps
+- agbs, datenschutz, about us, legal stuff
+- google analytics
+- seo / meta tags
+- better domain
+- https
+- rating system (stars)
+- mobile adjustments
+- better design
+- multilangual
+- admin pp aproval page
+- upload: only ppt & pptx
+- ppinfo: like and dislike button
+- ppinfo: share option

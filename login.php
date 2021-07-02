@@ -15,8 +15,8 @@
             </ol>
 
         </div>
-    </div>
-</section>			
+        </div>
+      </section>			
 			</div>
 		</div>
 	</div>
@@ -28,48 +28,48 @@
     		<div class="row">
     			<div class="col-md-6">
     				<div class="email_box">
-                    <div class="input_main">
-                       <div class="container">
-                          <form action="inc/login_form.php" method="POST">
-						  	<input type="hidden" name="login" value="login">
-						  	<h2 style="color: white"><strong>LOGIN</strong></h2>
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Username / E-Mail" name="username" required="required">
-                            </div>
-                            <div class="form-group">
-                              <input type="password" class="email-bt" placeholder="Password" name="password" required="required">
-                            </div> 
-							<div class="send_btn">
-									<button type="submit" class="main_bt">Send</button>
-							</div>
-                          </form>   
-                       </div>
-                    </div>
-    		</div>
-    			</div>
-    			<div class="col-md-6">
-				<div class="email_box">
-                    <div class="input_main">
-                       <div class="container">
-                          <form action="inc/register_form.php" method="POST">
-						  	<input type="hidden" name="register" value="register">
-						  	<h2 style="color: white"><strong>REGISTER</strong></h2>
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Username" name="username" required="required">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="E-Mail" name="mail" required="required">
-                            </div>
-                            <div class="form-group">
-                              <input type="password" class="email-bt" placeholder="Password" name="password" required="required">
-                            </div>
-                            <div class="form-group">
-                              <input type="password" class="email-bt" placeholder="Password" name="password" required="required">
-                            </div>
-							<div class="send_btn">
-								<button type="submit" class="main_bt">Send</button>
-							</div>
-						  </form>
+              <div class="input_main">
+                  <div class="container">
+                    <form action="inc/login_form.php" method="POST">
+                      <input type="hidden" name="login" value="login">
+                      <h2 style="color: white"><strong>LOGIN</strong></h2>
+                      <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Username / E-Mail" name="username" required="required">
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="email-bt" placeholder="Password" name="password" required="required">
+                      </div> 
+                      <div class="send_btn">
+                          <button type="submit" class="main_bt">Send</button>
+                      </div>
+                    </form>   
+                  </div>
+              </div>
+            </div>
+              </div>
+              <div class="col-md-6">
+            <div class="email_box">
+              <div class="input_main">
+                  <div class="container">
+                    <form action="inc/register_form.php" method="POST">
+                      <input type="hidden" name="register" value="register">
+                      <h2 style="color: white"><strong>REGISTER</strong></h2>
+                        <div class="form-group">
+                          <input type="text" class="email-bt" placeholder="Username" name="username" required="required">
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="email-bt" placeholder="E-Mail" name="mail" required="required">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="email-bt" placeholder="Password" name="password" required="required">
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="email-bt" placeholder="Password" name="password" required="required">
+                        </div>
+                        <div class="send_btn">
+                          <button type="submit" class="main_bt">Send</button>
+                        </div>
+                        </form>
                        </div>                
                     </div>
     			</div>
