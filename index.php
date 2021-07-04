@@ -25,7 +25,7 @@
 								<h1 class="banner_text"><strong>Marketplace</strong></h1>
 								<p class="lorem_text">Gratis PowerPoints Herunterladen</p>
 								<button class="buy_bt">Kategorien</button>
-								<button class="more_bt">Best</button>
+								<button class="more_bt">Top</button>
 							</div>
 					<div class="col-sm-5">
 						<div class="shoes_img"></div>

@@ -24,11 +24,11 @@
 						<h2 class="adderess_text">Seiten</h2>
 						<div class="delivery_text">
     				    	<ul>
-    				    		<li>Kategorien</li>
-    				    		<li>Beste</li>
-    				    		<li>Neuste</li>
-    				    		<li>Zufällig</li>
-    				    		<li>Suche</li>
+                                <a href="categories.php" style="color:white;"><li>Kategorien</li></a>
+    				    		<a href="powerpoints.php?cat=top" style="color:white;"><li>Top</li></a>
+    				    		<a href="powerpoints.php?cat=new" style="color:white;"><li>Neuste</li></a>
+    				    		<a href="ppinfo.php?id=<?php $sql = "SELECT id FROM powerpoints ORDER BY rand() LIMIT 1"; $result = $mysqli->query($sql); while($row = $result->fetch_assoc()) { echo $row["id"]; } ?>" style="color:white;"><li>Zufällig</li></a>
+    				    		<!-- <a href="" style="color:white;"><li>Suche</li></a> -->
     				    	</ul>
     				    </div>
     				</div>

@@ -54,6 +54,9 @@
 										<ul>
 											<?php for($i=0; $i<$row["stars"]; $i++) { ?>
 												<li><a href="#"><img src="images/star-icon.png"></a></li>
+											<?php }
+											if ($row["stars"] <= 0) { ?>
+												<li><a href="#"></a></li>
 											<?php } ?>
 										</ul>
 									</div>

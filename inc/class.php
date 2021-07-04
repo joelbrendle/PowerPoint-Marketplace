@@ -2,13 +2,13 @@
 
     $fach = [
         0 => "Anderes Fach",
-        1 => "Geographie 🌍",
-        2 => "Geschichte",
+        1 => "🌍 Geographie",
+        2 => "📕 Geschichte",
         3 => "Englisch",
-        4 => "Wirtschaft",
+        4 => "💰 Wirtschaft",
         5 => "Französisch",
         6 => "Deutsch",
-        7 => "Mathematik",
+        7 => "💯 Mathematik",
         8 => "Physik",
         9 => "Chemie",
         10 => "Spanisch",
