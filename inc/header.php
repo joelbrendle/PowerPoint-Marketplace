@@ -37,6 +37,17 @@
       <?php include("inc/class.php"); ?>
       <?php include("inc/author.php"); ?>
       <script src="../js/script.js"></script> 
+      
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1RD8R03PQ"></script>
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-B1RD8R03PQ');
+      </script>
+
    </head>
    <!-- body -->
    <body class="main-layout">

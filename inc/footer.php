@@ -27,7 +27,7 @@
                                 <a href="categories.php" style="color:white;"><li>Kategorien</li></a>
     				    		<a href="powerpoints.php?cat=top" style="color:white;"><li>Top</li></a>
     				    		<a href="powerpoints.php?cat=new" style="color:white;"><li>Neuste</li></a>
-    				    		<a href="ppinfo.php?id=<?php $sql = "SELECT id FROM powerpoints ORDER BY rand() LIMIT 1"; $result = $mysqli->query($sql); while($row = $result->fetch_assoc()) { echo $row["id"]; } ?>" style="color:white;"><li>Zufällig</li></a>
+    				    		<a href="ppinfo.php?id=<?php $sql = "SELECT id FROM powerpoints WHERE active LIKE 1 ORDER BY rand() LIMIT 1"; $result = $mysqli->query($sql); while($row = $result->fetch_assoc()) { echo $row["id"]; } ?>" style="color:white;"><li>Zufällig</li></a>
     				    		<!-- <a href="" style="color:white;"><li>Suche</li></a> -->
     				    	</ul>
     				    </div>

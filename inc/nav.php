@@ -13,7 +13,7 @@
                     <a class="nav-item nav-link" href="categories.php">Kategorien</a>
                     <a class="nav-item nav-link" href="powerpoints.php?cat=top">Top</a>
                     <a class="nav-item nav-link" href="powerpoints.php?cat=new">Neuste</a>
-                    <a class="nav-item nav-link" href="ppinfo.php?id=<?php $sql = "SELECT id FROM powerpoints ORDER BY rand() LIMIT 1"; $result = $mysqli->query($sql); while($row = $result->fetch_assoc()) { echo $row["id"]; } ?>">Zufällig</a>
+                    <a class="nav-item nav-link" href="ppinfo.php?id=<?php $sql = "SELECT id FROM powerpoints WHERE active LIKE 1 ORDER BY rand() LIMIT 1"; $result = $mysqli->query($sql); while($row = $result->fetch_assoc()) { echo $row["id"]; } ?>">Zufällig</a>
                     <!-- <a class="nav-item nav-link last" href="#"><img src="images/search_icon.png"></a> -->
                     <a class="nav-item nav-link last" href="profile.php"><img src="images/profile.svg" style="height:30px"></a>
                 </div>
