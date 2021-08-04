@@ -48,7 +48,7 @@
             </div>
               </div>
               <div class="col-md-6">
-            <div class="email_box">
+            <div class="email_box" style="margin-right:70px;">
               <div class="input_main">
                   <div class="container">
                     <form action="inc/register_form.php" method="POST">

@@ -11,6 +11,44 @@
     }
     // printf('Connected successfully.<br />');(
 
+    function getCurrentUsername() {
+        
+        $userid = $_SESSION['account'];
+        
+        $sql = "SELECT * FROM users WHERE id LIKE " . $userid . ";";
+		
+        global $mysqli;
+
+		$result = $mysqli->query($sql);
+
+		if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                return $row["username"];
+            }
+        }
+    }
+
+    function getUsernameByID($getuserid) {
+        
+        if(isset($getuserid)) {
+            $userid = $getuserid;
+                
+            $sql = "SELECT * FROM users WHERE id LIKE " . $userid . ";";
+
+            global $mysqli;
+
+            $result = $mysqli->query($sql);
+
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    return $row["username"];
+                }
+            }
+        } else {
+            return "unbekannt";
+        }
+    }
+
 ?>
 
 <?php

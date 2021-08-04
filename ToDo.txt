@@ -22,3 +22,5 @@ ToDo:
 - upload: only ppt & pptx
 - ppinfo: like and dislike button
 - ppinfo: share option
+- cookie info accept
+- on every pp feedback option

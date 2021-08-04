@@ -74,7 +74,7 @@
     		<h1 class="new_text"><strong>Über PP-Marketplace</strong></h1>
     	    <p class="info_text">Wir sind ein Marktplatz für PowerPoints aller Art. </p>
 			<p class="info_text">Brauchst du eine PowerPoint für Geographie?
-				<li class="info_text" style="margin-top: 5px;">&nbsp;&nbsp;&nbsp;1. Gehe einfach zur Kategorie Geographie</li>
+				<li class="info_text" style="margin-top: 5px;">&nbsp;&nbsp;&nbsp;1. Gehe einfach zur <a href="powerpoints.php?class=1" style="border-bottom:2px solid black;">Kategorie Geographie</a></li>
 				<li class="info_text">&nbsp;&nbsp;2. Such dir eine passende PowerPoint aus</li>
 				<li class="info_text">&nbsp;&nbsp;3. Und lade sie herunter. Fertig :D</li></p>
 			<p>&nbsp;</p>

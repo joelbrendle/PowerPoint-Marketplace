@@ -26,17 +26,39 @@
     <div class="layout_padding contact_section">
     	<div class="container-fluid ram">
     		<div class="text-center">
-    			<h2>Willkommen <?php echo $_SESSION["account"]; ?></h2><br><br>
+    			<h2>Willkommen <strong><?php echo getCurrentUsername(); ?><strong> 😃</h2><br><br>
                 <a href="uploadpp.php"><button class="main_bt" style="background-color: green; width:250px;">Neue PowerPoint</button></a>
                 <br><br><br>
                 <form action="inc/loggout_form.php" method="POST">
-                <input type="hidden" name="loggout" value="loggout">
-                <div class="send_btn">
-                    <button type="submit" class="main_bt">Abmelden</button>
-                </div>
+                    <input type="hidden" name="loggout" value="loggout">
+                    <div class="send_btn">
+                        <button type="submit" class="main_bt">Abmelden</button>
+                    </div>
                 </form>
-    	</div>
-    </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Meine PowerPoints:</h2>
+                <br>
+                <?php
+                    $sql = "SELECT * FROM powerpoints WHERE (active LIKE 1 AND author LIKE ".$_SESSION["account"].")";    
+					$result = $mysqli->query($sql);
+                    while($row = $result->fetch_assoc()) {
+                        ?>
+                        <a href="ppinfo.php?id=<?php echo $row["id"] ?>" class="profileMyPPs">
+                            <div style="margin-bottom:-30px;">
+                                <p class="best_text" style="float:left; margin-bottom:-10px;"><b><?php echo $row["title"] ?>&nbsp;&nbsp;&nbsp;x</b></p>
+                            </div>
+                        </a>
+                        <br>
+                        
+                    <?php
+					}
+                ?>
+    	    </div>
+        </div>
    	<!-- contact section end -->
 </div>
 <!-- info text end -->

@@ -43,7 +43,7 @@
 						<h1 class="new_text"><strong><?php echo $row["title"] . " - " . $fach[$row["fach"]]; ?></strong></h1>
 						<p class="consectetur_text"><?php echo $row["tinyinfo"]; ?></p>
 						<ul style="">
-							<p style="float:left;"><span>Author: <?php echo getAuthor($row["author"]); ?></span></p>
+							<p style="float:left;"><span>Author: <?php echo getUsernameByID($row["author"]); ?></span></p>
 						</ul>
 						<ul style=""><p style="float:left;">Bewertung:
 							<?php for($i=0; $i<$row["stars"]; $i++) { ?>
@@ -70,7 +70,7 @@
 				</div>
 				<div class="collectipn_section_3 layout_padding">
 					<br><br><br>
-					<div class="container">
+					<div class="container" style="border:solid 1px black;">
 
 
 

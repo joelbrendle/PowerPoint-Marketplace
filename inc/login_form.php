@@ -11,7 +11,9 @@
         $result = $mysqli->query($sql);
 
         if ($result->num_rows > 0) {
-            $_SESSION["account"] = $_POST["username"];
+            while($row = $result->fetch_assoc()) {
+                $_SESSION["account"] = $row["id"];
+            }
             header("Location: ../profile.php");
         } else {
             echo "wrong login details";

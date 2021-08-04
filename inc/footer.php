@@ -15,8 +15,8 @@
     				    	<ul>
     				    		<li>Über uns</li>
     				    		<li>Kontakt</li>
-    				    		<li>Datenschutz</li>
-    				    		<li>AGBs</li>
+    				    		<a href="../impressum.php" style="color:white;"><li>Impressum</li></a>
+    				    		<a href="../datenschutz.php" style="color:white;"><li>Datenschutz</li></a>
     				    	</ul>
     				    </div>
     		        </div>

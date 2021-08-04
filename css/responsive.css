@@ -442,7 +442,7 @@ ul.link li {
 .mens_taital { display: none; }
 .mens_taital_2 { display: none; }
 .page_no { display: none;}
-.bg-light { background-color: #db5660!important;  }
+.bg-light { background-color: #4289d5 !important;  }
 .header_section { background-size: cover;}
 .header_section { background-size: cover; background-repeat: no-repeat;}
 .buy_text { width: 100%; }
@@ -460,7 +460,8 @@ ul.link li {
 .about-img { margin-left: 0px;}
 .new_bt { margin-left: 0px; width: 33%;}
 .about-img2 { margin-left: 0px;}
+}
 
-
-
+.profileMyPPs:hover {
+    background-color: gray;
 }

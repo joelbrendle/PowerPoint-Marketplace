@@ -27,15 +27,20 @@
     	<div class="container-fluid ram">
     		<div class="text-center">
     			<h2>Lade hier deine PowerPoint hoch!</h2><br><br>
-                <form class="" action="inc/uploadpp_form.php" method="POST" style="width: 40%" enctype="multipart/form-data">
+                <form class="" action="inc/uploadpp_form.php" method="POST" style="width:40%;margin-left:30%;" enctype="multipart/form-data">
                     <input type="hidden" name="uploadpp" value="uploadpp">
                     <input class="email-bt" type="text" name="title" placeholder="Titel"><br><br>
                     <input class="email-bt" type="text" name="desc" placeholder="Beschreibung"><br><br>
-                    <input class="email-bt" type="text" name="fach" placeholder="Fach (1,2,3...)"><br><br>
-                    <select>
-                        <option>asdf</option>
-                    </select>
+                    <!-- <input class="email-bt" type="text" name="fach" placeholder="Fach (1,2,3...)"><br><br> -->
+                    <!--<select class="nice-select" name="fach">
+                        <?php 
+                            for($i=0; $i<count($fach); $i++) {
+                                echo '<option value="'.$i.'">'.$fach[$i].'</option>';
+                            }
+                        ?>
+                    </select><br><br>-->
                     <input class="email-bt" type="file" name="ppfile" placeholder="Titel" style="height:80px"><br><br>
+                    <input type="hidden" name="fach" value="3">
                     <div class="send_btn">
                         <br>
                         <button type="submit" class="main_bt">Fertig :D</button>
