@@ -16,5 +16,3 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
-alert("test");
-console.log("afds");

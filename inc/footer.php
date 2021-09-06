@@ -13,10 +13,10 @@
     				    <h2 class="shop_text">Über uns</h2>
     				    <div class="delivery_text">
     				    	<ul>
-    				    		<li>Über uns</li>
-    				    		<li>Kontakt</li>
-    				    		<a href="../impressum.php" style="color:white;"><li>Impressum</li></a>
-    				    		<a href="../datenschutz.php" style="color:white;"><li>Datenschutz</li></a>
+                                <a href="impressum.php" style="color:white;"><li>Über uns</li></a>
+    				    		<a href="mailto:info.ppmarketplace@gmail.com" style="color:white;"><li>Kontakt</li></a>
+    				    		<a href="impressum.php" style="color:white;"><li>Impressum</li></a>
+    				    		<a href="datenschutz.php" style="color:white;"><li>Datenschutz</li></a>
     				    	</ul>
     				    </div>
     		        </div>

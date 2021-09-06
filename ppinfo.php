@@ -70,10 +70,12 @@
 				</div>
 				<div class="collectipn_section_3 layout_padding">
 					<br><br><br>
+
+					<div class="container">
+						<h3><strong>Vorschau (erste 5 Folien):</strong></h3>
+					</div>
+					
 					<div class="container" style="border:solid 1px black;">
-
-
-
 
 						<script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
 						<script type="text/javascript">

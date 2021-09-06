@@ -40,7 +40,7 @@
                 <br>
                 <br>
                 <br>
-                <h2>Meine PowerPoints:</h2>
+                <h2 style="text-decoration: underline;">Meine PowerPoints:</h2>
                 <br>
                 <?php
                     $sql = "SELECT * FROM powerpoints WHERE (active LIKE 1 AND author LIKE ".$_SESSION["account"].")";    
@@ -49,7 +49,7 @@
                         ?>
                         <a href="ppinfo.php?id=<?php echo $row["id"] ?>" class="profileMyPPs">
                             <div style="margin-bottom:-30px;">
-                                <p class="best_text" style="float:left; margin-bottom:-10px;"><b><?php echo $row["title"] ?>&nbsp;&nbsp;&nbsp;x</b></p>
+                                <p class="best_text" style="float:left; margin-bottom:-10px;"><b><?php echo $row["title"] ?>&nbsp;<a href="" onmouseover="color:green;">&nbsp;&nbsp;x</a></b></p>
                             </div>
                         </a>
                         <br>
