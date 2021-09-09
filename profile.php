@@ -47,13 +47,14 @@
 					$result = $mysqli->query($sql);
                     while($row = $result->fetch_assoc()) {
                         ?>
-                        <a href="ppinfo.php?id=<?php echo $row["id"] ?>" class="profileMyPPs">
-                            <div style="margin-bottom:-30px;">
-                                <p class="best_text" style="float:left; margin-bottom:-10px;"><b><?php echo $row["title"] ?>&nbsp;<a href="" onmouseover="color:green;">&nbsp;&nbsp;x</a></b></p>
-                            </div>
-                        </a>
-                        <br>
-                        
+                        <div style="margin-bottom:-30px;">    
+                            <a href="ppinfo.php?id=<?php echo $row["id"] ?>" class="profileMyPPs">
+                                <p class="best_text" style="float:left; margin-bottom:-10px;"><b><?php echo $row["title"] ?>&nbsp;</b>
+                            </a>
+                            &nbsp;&nbsp;
+                            <a href="inc/deletepp.php?id=<?php echo $row["id"]; ?>" onclick="return confirmDeletePP()">x</p></a>
+                        </div>
+                        <br>                        
                     <?php
 					}
                 ?>

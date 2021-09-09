@@ -6,10 +6,13 @@
         $uploaddir = "../storage/powerpoints/";
         $uploadfile = $uploaddir . basename($_FILES['ppfile']['name']);    
 
-        $sql = "INSERT INTO powerpoints (title, tinyinfo, fach, filename, created, author, img) VALUES ('" . $_POST['title'] . "','" . $_POST['desc'] . "','" . $_POST['fach'] . "','" . basename($_FILES['ppfile']['name']) . "','" . date('Y:m:d') . "','";
+        $sql = "INSERT INTO powerpoints (title, tinyinfo, fach, filename, created, author, img) VALUES ('" . $_POST['title'] . "','" . $_POST['desc'] . "','" . $_POST['fach'] . "','" . basename($_FILES['ppfile']['name']) . "','" . date('Y:m:d') . "',";
         
         session_start();
-        $sqluser = "SELECT id FROM users where username LIKE '" . $_SESSION["account"] . "';";
+        $sql .= "'".$_SESSION["account"]."'";
+        //
+
+        /*$sqluser = "SELECT id FROM users where username LIKE '" . $_SESSION["account"] . "';";
 
         echo $sqluser;
         if ($result->num_rows > 0) {
@@ -17,10 +20,10 @@
                 $sql .= $row["id"];
                 echo $row["id"];
             }
-        }
+        }*/
 
 
-        $sql .= "','".basename($_FILES['ppfile']['name'])."');";
+        $sql .= ",'".basename($_FILES['ppfile']['name'])."');";
 
         if ($mysqli->query($sql) == TRUE) {
             if (move_uploaded_file($_FILES['ppfile']['tmp_name'], $uploadfile)) {

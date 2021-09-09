@@ -36,7 +36,7 @@
       <?php include("inc/db.php"); ?>
       <?php include("inc/class.php"); ?>
       <?php include("inc/author.php"); ?>
-      <script src="../js/script.js"></script> 
+      <script src="js/script.js"></script> 
       
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1RD8R03PQ"></script>

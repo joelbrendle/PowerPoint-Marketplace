@@ -16,3 +16,13 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
+function confirmDeletePP() {
+  let confirmDeletePP = confirm("Möchtest du diese PowerPoint wirklich löschen?");
+
+  if(confirmDeletePP==true) {
+    // location.href = "inc/deletepp.php";
+    // return false;
+  } else {
+    return false;
+  }
+}
