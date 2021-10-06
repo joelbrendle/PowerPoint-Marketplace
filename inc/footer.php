@@ -17,6 +17,7 @@
     				    		<a href="mailto:info.ppmarketplace@gmail.com" style="color:white;"><li>Kontakt</li></a>
     				    		<a href="impressum.php" style="color:white;"><li>Impressum</li></a>
     				    		<a href="datenschutz.php" style="color:white;"><li>Datenschutz</li></a>
+    				    		<!-- <a href="agb.php" style="color:white;"><li>AGB</li></a> -->
     				    	</ul>
     				    </div>
     		        </div>
@@ -51,7 +52,6 @@
       <script src="js/custom.js"></script>
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
       <script>
          $(document).ready(function(){
          $(".fancybox").fancybox({

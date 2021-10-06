@@ -12,10 +12,10 @@
 
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
-                if (password_verify($_POST['password'], '$2y$10$UhUMRj.kwzOuTl2aNBTdou8jpCCsV1goz9ziMpQZ4OquX/V52yRlO')) {
+                if (password_verify($_POST['password'], $row['password'])) {
                     $_SESSION["account"] = $row["id"];
                 } else {
-                    echo "wrong login details"; break;
+                    echo "wrong login details";
                 }
             }
             header("Location: ../profile.php");
