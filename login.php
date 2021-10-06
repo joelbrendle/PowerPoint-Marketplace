@@ -7,12 +7,7 @@
     <div class="container-fluid">
 	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
+            
 
         </div>
         </div>
@@ -66,6 +61,7 @@
                         <div class="form-group">
                           <input type="password" class="email-bt" placeholder="Password" name="password" required="required">
                         </div>
+                        <p>Beim Registrieren erklärst du dich mit unserer <a style="color:white;" href="datenschutz.php">Datenschutzerklärung</a> einverstanden</p>
                         <div class="send_btn">
                           <button type="submit" class="main_bt">Send</button>
                         </div>

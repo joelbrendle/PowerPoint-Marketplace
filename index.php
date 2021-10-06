@@ -6,18 +6,13 @@
     <div class="container-fluid">
 	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
+            
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row">
-					<div class="col-sm-1 padding_0"></div>
+					<div class="col-sm-2 padding_0"></div>
 					<div class="col-sm-5" id="title_box">
 						<div class="col-sm-5">
 							<div class="banner_taital">

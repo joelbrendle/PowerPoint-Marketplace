@@ -6,12 +6,7 @@
     <div class="container-fluid">
 	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
+            
 
         </div>
     </div>
@@ -55,7 +50,7 @@
 							<p style="float:left;"><span>Downloads: <?php echo $row["downloads"]; ?></span> <img src="images/download.svg"></p>
 						</ul>
 						<ul style="">
-							<p style="float:left;"><span>Erstelldatum: <?php echo $row["created"]; ?></span></p>
+							<p style="float:left;"><span>Erstelldatum: <?php echo date("d M, Y", strtotime($row["created"])); ?></span></p>
 						</ul>
 						<br>&nbsp;<br><br><br>
 						<form action="inc/download_form.php" method="POST">
@@ -75,7 +70,7 @@
 						<h3><strong>Vorschau (erste 5 Folien):</strong></h3>
 					</div>
 					
-					<div class="container" style="border:solid 1px black;">
+					<div class="container" style="<?php /*border:solid 1px black; */?>">
 
 						<script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
 						<script type="text/javascript">

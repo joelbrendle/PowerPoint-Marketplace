@@ -7,12 +7,7 @@
     <div class="container-fluid">
 	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
+            
 
         </div>
     </div>
@@ -43,16 +38,17 @@
                 <h2 style="text-decoration: underline;">Meine PowerPoints:</h2>
                 <br>
                 <?php
-                    $sql = "SELECT * FROM powerpoints WHERE (active LIKE 1 AND author LIKE ".$_SESSION["account"].")";    
+                    $sql = "SELECT * FROM powerpoints WHERE author LIKE ".$_SESSION["account"];    
 					$result = $mysqli->query($sql);
                     while($row = $result->fetch_assoc()) {
                         ?>
-                        <div style="margin-bottom:-30px;">    
+                        <div style="margin-bottom:-30px; <?php /* border:1px solid black; width:200px */?>">    
                             <a href="ppinfo.php?id=<?php echo $row["id"] ?>" class="profileMyPPs">
-                                <p class="best_text" style="float:left; margin-bottom:-10px;"><b><?php echo $row["title"] ?>&nbsp;</b>
+                                <p class="best_text" style="float:left; margin-bottom:-10px;"><b><span style="text-decoration:underline;"><?php echo $row["title"] ?></span>&nbsp;</b>
                             </a>
                             &nbsp;&nbsp;
                             <a href="inc/deletepp.php?id=<?php echo $row["id"]; ?>" onclick="return confirmDeletePP()">x</p></a>
+                            <br><br><a href="editpp.php?id=<?php echo $row["id"]; ?>">> edit <</a>&nbsp;&nbsp;&nbsp;&nbsp;(Status: <?php if($row["active"]) echo "<span style='color:green'>public</span>"; else echo "<span style='color:red'>review</span>"; ?>)
                         </div>
                         <br>                        
                     <?php
