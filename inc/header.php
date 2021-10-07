@@ -8,9 +8,14 @@
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
       <title>PowerPoint Marketplace</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
+      <meta name="title" content="PowerPoint Marketplace">
+      <meta name="description" content="Fertige PowerPoints mit Inhalt für Schule">
+      <meta name="keywords" content="power, point, powerpoint, market, marketplace, joel, cool, joel.cool, presentation, vortrag, marktplatz, markt, präsentation, folie, vorlage, slides, schule, englisch, deutsch, german, download, herunterladen, fertig, template">
+      <meta name="robots" content="index, follow">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="language" content="German">
+      <meta name="author" content="joel.cool">
+
       <!-- bootstrap css -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <!-- style css -->
@@ -18,7 +23,7 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="images/fav.ico" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
@@ -26,7 +31,6 @@
       <!-- owl stylesheets --> 
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -45,11 +49,16 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-B1RD8R03PQ');
+      gtag('config', 'G-54JDTEKD66');
       </script>
 
-   </head>
-   <!-- body -->
-   <body class="main-layout">
-	<!-- header section start -->
+      <?php
+
+         if (pathinfo($_SERVER['PHP_SELF'])['basename'] != 'ppinfo.php') {
+            ?>
+         </head>
+      <body class="main-layout">
 	<div class="header_section">
+<?php
+}
+?>

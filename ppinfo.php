@@ -1,5 +1,39 @@
 <?php include('inc/header.php'); ?>
+
+<?php
+
+	if (isset($_GET['id'])) {
+		$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 AND id LIKE ".$_GET['id'];
+	} else {
+		$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 AND id LIKE 1";
+	}
+
+$result = $mysqli->query($sql);
+
+if ($result->num_rows > 0) {
+while($row = $result->fetch_assoc()) {
+
+?>
+
+	<meta name="title" content="<?php echo $row['title']; ?>">
+	<meta name="description" content="<?php echo $row['tinyinfo']; ?>">
+	<meta name="keywords" content="power, point, powerpoint, market, marketplace, joel, cool, joel.cool, presentation, vortrag, marktplatz, markt, präsentation, folie, vorlage, slides, schule, englisch, deutsch, german, download, herunterladen, fertig, template, <?php echo $row['title']; ?>, <?php echo $row['tinyinfo']; ?>, <?php echo $row['author']; ?>">
+	<meta name="author" content="<?php echo $row['author']; ?>">
+
+</head>
+    <body class="main-layout">
+	<div class="header_section">
+
+<?php
+
+	}
+}
+
+?>
+
 		<?php include('inc/nav.php') ?>
+
+
 		<div class="banner_section">
 			<div class="container-fluid">
 				<section class="slide-wrapper">
@@ -7,7 +41,6 @@
 	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             
-
         </div>
     </div>
 </section>
@@ -17,21 +50,22 @@
 	<!-- header section end -->
     <div class="collection_section">
 	<?php
+
 	
-		if (isset($_GET['id'])) {
-			$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 AND id LIKE ".$_GET['id'];
-		} else {
-			$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 AND id LIKE 1";
-		}
+	if (isset($_GET['id'])) {
+		$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 AND id LIKE ".$_GET['id'];
+	} else {
+		$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 AND id LIKE 1";
+	}
 
-		$result = $mysqli->query($sql);
+	$result = $mysqli->query($sql);
 
-		if ($result->num_rows > 0) {
-		while($row = $result->fetch_assoc()) {
-
+		
+	if ($result->num_rows > 0) {
+	while($row = $result->fetch_assoc()) {
 
 				?>
-				<div class="collection_text"><?php echo $row["title"]; ?></div>
+				<div class="collection_text"><?php echo $row['title']; ?></div>
 			<div class="about_main layout_padding">
 				<div class="collection_section">
 					<div class="container">
