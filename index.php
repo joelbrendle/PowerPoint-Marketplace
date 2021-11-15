@@ -35,7 +35,7 @@
 		</div>
 	</div>
 	<!-- header section end -->
-	<!-- New Arrivals section start -->
+	<!-- Beliebteste Kategorien -->
     <div class="layout_padding gallery_section">
     	<div class="container">
     		<div class="row">
@@ -59,13 +59,45 @@
     		</div>
     	</div>
     </div>
-   	<!-- New Arrivals section end -->
-	<!-- info text start -->
-    <div class="layout_padding collection_section">
-    	
+	<!-- Beliebteste Kategorien ende -->
+	<!-- Neuste Powerpoints -->
+    <div class="layout_padding gallery_section">
+    	<div class="container">
+    		<div class="row">
+				<h1 class="new_text" style="color: white; margin-left: 20px;"><strong>Neuste Powerpoints</strong></h1>
+    			<?php 
+					// get newest pps
+					$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 ORDER BY created DESC";
+
+					$result = $mysqli->query($sql);
+
+					$counter = 1;
+					
+					if ($result->num_rows > 0) {
+						while($row = $result->fetch_assoc()) {
+							?>
+								<div class="col-sm-4">
+									<a href="powerpoints.php?class=<?php echo $i; ?>">
+										<div class="best_shoes">
+											<p class="best_text"><?php echo $fach[$i]; ?></p>
+										</div>
+									</a>
+								</div>
+							<?php
+						}
+					}
+				?>
+    		</div>
+    		<div class="buy_now_bt">
+    			<a href="categories.php"><button class="buy_text" style="width:200px">&nbsp;Mehr Kategorien&nbsp;</button></a>
+    		</div>
+    	</div>
     </div>
+	<!-- Neuste Powerpoints ende -->
+	<!-- info text start -->
     <div class="collection_section">
     	<div class="container">
+			<br><br><br><br>
     		<h1 class="new_text"><strong>Über PP-Marketplace</strong></h1>
     	    <p class="info_text">Wir sind ein Marktplatz für PowerPoints aller Art. </p>
 			<p class="info_text">Brauchst du eine PowerPoint für Geographie?

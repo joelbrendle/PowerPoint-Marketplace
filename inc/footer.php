@@ -10,7 +10,7 @@
     		        	<p class="dummy_text">Gratis PowerPoints Herunterladen</p>
     				</div>
     		        <div class="col-sm-4 col-md-6 col-lg-3">
-    				    <h2 class="shop_text">Über uns</h2>
+    				    <h2 class="shop_text">Infos</h2>
     				    <div class="delivery_text">
     				    	<ul>
                                 <a href="impressum.php" style="color:white;"><li>Über uns</li></a>
@@ -38,7 +38,7 @@
     	</div>
     </div>
 	<!-- section footer end -->
-	<div class="copyright"><?php echo date('Y'); ?> PowerPoint Marketplace</div>
+	<div class="copyright">PowerPoint Marketplace © <?php echo date('Y'); ?></div>
 
 
       <!-- Javascript files-->

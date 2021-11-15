@@ -1,35 +1,45 @@
-<?php include('inc/header.php'); ?>
-		<?php include('inc/nav.php') ?>
-		<div class="banner_section">
-			<div class="container-fluid">
-				<section class="slide-wrapper">
-    <div class="container-fluid">
-	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            
-
-        </div>
-    </div>
-</section>			
-			</div>
+	<?php include('inc/header.php'); ?>
+	<?php include('inc/nav.php') ?>
+	<div class="banner_section">
+		<div class="container-fluid">
+			<section class="slide-wrapper">
+				<div class="container-fluid">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+					</div>
+				</div>
+			</section>			
 		</div>
 	</div>
-	<!-- header section end -->
-	<!-- New Arrivals section start -->
-	<div class="collection_text">PowerPoints</div>
+</div>
+<!-- header section end -->
+<!-- New Arrivals section start -->
+<div class="collection_text">PowerPoints</div>
     <div class="layout_padding gallery_section">
     	<div class="container">
 				<?php
 				
 					if (isset($_GET['cat']) && $_GET['cat'] == 'top') {
 						$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 ORDER BY downloads DESC";
+						$pagetitle = 'TOP Powerpoints';
 					} elseif (isset($_GET['cat']) && $_GET['cat'] == 'new') {
 						$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 ORDER BY created DESC";
+						$pagetitle = 'NEW Powerpoints';
 					} elseif (isset($_GET['class'])) {
 						$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 AND fach LIKE ".$_GET['class'];
+						$pagetitle = $_GET['class'];
 					} else {
 						$sql = "SELECT * FROM powerpoints WHERE active LIKE 1";
+						$pagetitle = 'Alle PowerPoints';
 					}
+
+					?>
+
+					<script>
+						document.title = "<?php echo $pagetitle; ?> ꞏ PPM";
+					</script>
+
+					<?php
     
 					$result = $mysqli->query($sql);
 
