@@ -3,6 +3,13 @@
    <head>
       <!-- basic -->
       <meta charset="utf-8">
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-KC6WPSB');</script>
+      <!-- End Google Tag Manager -->
       <!-- mobile metas -->
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
@@ -34,7 +41,6 @@
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-
       <!-- includes -->
       <?php session_start(); ?>
       <?php include("inc/db.php"); ?>
@@ -57,8 +63,12 @@
          if (pathinfo($_SERVER['PHP_SELF'])['basename'] != 'ppinfo.php') {
             ?>
          </head>
-      <body class="main-layout">
-	<div class="header_section">
-<?php
+         <body class="main-layout">
+         <!-- Google Tag Manager (noscript) -->
+         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC6WPSB"
+         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+         <!-- End Google Tag Manager (noscript) -->
+      <div class="header_section">
+   <?php
 }
 ?>
