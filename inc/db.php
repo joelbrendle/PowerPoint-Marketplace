@@ -1,8 +1,8 @@
 <?php
     $dbhost = 'localhost';
     $dbuser = 'root';
-    $dbpass = '';
-    $dbname = 'powerpoint-marketplace';
+    $dbpass = '1';
+    $dbname = 'powerpointmarketplace';
     $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
     
     if($mysqli->connect_errno ) {
