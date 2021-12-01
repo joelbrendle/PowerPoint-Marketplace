@@ -207,8 +207,8 @@ button {
 }
 
 .layout_padding {
-     padding-top: 90px;
-     padding-bottom: 90px;
+     padding-top: 90px !important;
+     padding-bottom: 90px !important;
 }
 
 .header_section{
