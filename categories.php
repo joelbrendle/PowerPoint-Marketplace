@@ -24,7 +24,7 @@
 					for($i=1; $i<=6; $i++) {
 						?>
 							<div class="col-sm-4">
-								<a href="powerpoints.php?class=<?php echo $i; ?>">
+								<a href="powerpoints?class=<?php echo $i; ?>">
 									<div class="best_shoes">
 										<p class="best_text"><?php echo $fach[$i]; ?></p>
 									</div>
@@ -49,7 +49,7 @@
 				for($i=0; $i<count($fach); $i++) {
 					?>
 						<div class="col-sm-4">
-							<a href="powerpoints.php?class=<?php echo $i; ?>">
+							<a href="powerpoints?class=<?php echo $i; ?>">
 								<div class="all-cat">
 									<p class="best_text" style="color:white;"><?php echo $fach[$i]; ?></p>
 								</div>

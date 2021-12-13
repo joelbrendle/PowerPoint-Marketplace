@@ -61,7 +61,7 @@
                         <div class="form-group">
                           <input type="password" class="email-bt" placeholder="Password" name="password" required="required">
                         </div>
-                        <p>Beim Registrieren erklärst du dich mit unserer <a style="color:white;" href="datenschutz.php">Datenschutzerklärung</a> einverstanden</p>
+                        <p>Beim Registrieren erklärst du dich mit unserer <a style="color:white;" href="datenschutz">Datenschutzerklärung</a> einverstanden</p>
                         <div class="send_btn">
                           <button type="submit" class="main_bt">Send</button>
                         </div>

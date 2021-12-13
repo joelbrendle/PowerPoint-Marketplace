@@ -43,7 +43,7 @@
                             <input type="hidden" name="fach" value="0">-->
                             <div class="send_btn">
                                 <br>
-                                <a href="profile.php"><input type="button" value="Abbrechen :("></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="profile"><input type="button" value="Abbrechen :("></a>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <button type="submit" class="main_bt">Aktualisieren</button>
                             </div>
                         <?php } ?>

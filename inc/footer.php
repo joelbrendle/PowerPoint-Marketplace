@@ -13,11 +13,11 @@
     				    <h2 class="shop_text">Infos</h2>
     				    <div class="delivery_text">
     				    	<ul>
-                                <a href="impressum.php" style="color:white;"><li>Über uns</li></a>
+                                <a href="impressum" style="color:white;"><li>Über uns</li></a>
     				    		<a href="mailto:info.ppmarketplace@gmail.com" style="color:white;"><li>Kontakt</li></a>
-    				    		<a href="impressum.php" style="color:white;"><li>Impressum</li></a>
-    				    		<a href="datenschutz.php" style="color:white;"><li>Datenschutz</li></a>
-    				    		<!-- <a href="agb.php" style="color:white;"><li>AGB</li></a> -->
+    				    		<a href="impressum" style="color:white;"><li>Impressum</li></a>
+    				    		<a href="datenschutz" style="color:white;"><li>Datenschutz</li></a>
+    				    		<!-- <a href="agb" style="color:white;"><li>AGB</li></a> -->
     				    	</ul>
     				    </div>
     		        </div>
@@ -25,10 +25,10 @@
 						<h2 class="adderess_text">Seiten</h2>
 						<div class="delivery_text">
     				    	<ul>
-                                <a href="categories.php" style="color:white;"><li>Kategorien</li></a>
-    				    		<a href="powerpoints.php?cat=top" style="color:white;"><li>Top</li></a>
-    				    		<a href="powerpoints.php?cat=new" style="color:white;"><li>Neuste</li></a>
-    				    		<a href="ppinfo.php?id=<?php $sql = "SELECT id FROM powerpoints WHERE active LIKE 1 ORDER BY rand() LIMIT 1"; $result = $mysqli->query($sql); while($row = $result->fetch_assoc()) { echo $row["id"]; } ?>" style="color:white;"><li>Zufällig</li></a>
+                                <a href="categories" style="color:white;"><li>Kategorien</li></a>
+    				    		<a href="powerpoints?cat=top" style="color:white;"><li>Top</li></a>
+    				    		<a href="powerpoints?cat=new" style="color:white;"><li>Neuste</li></a>
+    				    		<a href="ppinfo?id=<?php $sql = "SELECT id FROM powerpoints WHERE active LIKE 1 ORDER BY rand() LIMIT 1"; $result = $mysqli->query($sql); while($row = $result->fetch_assoc()) { echo $row["id"]; } ?>" style="color:white;"><li>Zufällig</li></a>
     				    		<!-- <a href="" style="color:white;"><li>Suche</li></a> -->
     				    	</ul>
     				    </div>

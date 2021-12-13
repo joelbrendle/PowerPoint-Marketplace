@@ -27,8 +27,8 @@
 
         if ($mysqli->query($sql) == TRUE) {
             if (move_uploaded_file($_FILES['ppfile']['tmp_name'], $uploadfile)) {
-                echo '<script>alert("PowerPoint wurde erstellt"); window.location.replace("../profile.php");</script>';
-                //header("Location: ../profile.php");
+                echo '<script>alert("PowerPoint wurde erstellt"); window.location.replace("../profile");</script>';
+                //header("Location: ../profile");
             } else {
                 echo "Möglicherweise eine Dateiupload-Attacke!\n";
             }

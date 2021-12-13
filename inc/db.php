@@ -13,18 +13,22 @@
 
     function getCurrentUsername() {
         
-        $userid = $_SESSION['account'];
-        
-        $sql = "SELECT * FROM users WHERE id LIKE " . $userid . ";";
-		
-        global $mysqli;
+        if (ISSET($_SESSION["account"])) {
+            $userid = $_SESSION["account"];
 
-		$result = $mysqli->query($sql);
+            $sql = "SELECT * FROM users WHERE id LIKE " . $userid . ";";
+            
+            global $mysqli;
 
-		if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
-                return $row["username"];
+            $result = $mysqli->query($sql);
+
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    return $row["username"];
+                }
             }
+        } else {
+            return false;
         }
     }
 

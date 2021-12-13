@@ -14,27 +14,28 @@
 </div>
 <!-- header section end -->
 <!-- New Arrivals section start -->
-<div class="collection_text">PowerPoints</div>
+
+<?php
+				
+	if (isset($_GET['cat']) && $_GET['cat'] == 'top') {
+		$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 ORDER BY downloads DESC";
+		$pagetitle = 'TOP';
+	} elseif (isset($_GET['cat']) && $_GET['cat'] == 'new') {
+		$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 ORDER BY created DESC";
+		$pagetitle = 'Neuste';
+	} elseif (isset($_GET['class'])) {
+		$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 AND fach LIKE ".$_GET['class'];
+		$pagetitle = $fach[$_GET['class']];
+	} else {
+		$sql = "SELECT * FROM powerpoints WHERE active LIKE 1";
+		$pagetitle = 'Alle';
+	}
+
+?>
+
+<div class="collection_text"><?php echo $pagetitle; ?> - PowerPoints</div>
     <div class="layout_padding gallery_section">
     	<div class="container">
-				<?php
-				
-					if (isset($_GET['cat']) && $_GET['cat'] == 'top') {
-						$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 ORDER BY downloads DESC";
-						$pagetitle = 'TOP Powerpoints';
-					} elseif (isset($_GET['cat']) && $_GET['cat'] == 'new') {
-						$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 ORDER BY created DESC";
-						$pagetitle = 'NEW Powerpoints';
-					} elseif (isset($_GET['class'])) {
-						$sql = "SELECT * FROM powerpoints WHERE active LIKE 1 AND fach LIKE ".$_GET['class'];
-						$pagetitle = $_GET['class'];
-					} else {
-						$sql = "SELECT * FROM powerpoints WHERE active LIKE 1";
-						$pagetitle = 'Alle PowerPoints';
-					}
-
-					?>
-
 					<script>
 						document.title = "<?php echo $pagetitle; ?> ꞏ PPM";
 					</script>
@@ -49,7 +50,7 @@
 					while($row = $result->fetch_assoc()) {
 						if ($counter == 1) echo '<div class="row">';
 						?>
-						<a href="ppinfo.php?id=<?php echo $row["id"] ?>">
+						<a href="ppinfo?id=<?php echo $row["id"] ?>">
 						<div class="col-sm-4 pp-link">
 							<div class="best_shoes">
 								<p class="best_text"><?php echo $row["title"] ?> </p>

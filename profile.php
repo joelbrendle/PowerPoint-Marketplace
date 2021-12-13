@@ -1,6 +1,6 @@
 <?php include('inc/header.php'); ?>
+        <?php if(!ISSET($_SESSION["account"])) header("Location: login"); ?>
 		<?php include('inc/nav.php') ?>
-        <?php if(!ISSET($_SESSION["account"])) header("Location: login.php"); ?>
 		<div class="banner_section">
 			<div class="container-fluid">
 				<section class="slide-wrapper">
@@ -22,7 +22,7 @@
     	<div class="container-fluid ram">
     		<div class="text-center">
     			<h2>Willkommen <strong><?php echo getCurrentUsername(); ?><strong> 😃</h2><br><br>
-                <a href="uploadpp.php"><button class="main_bt" style="background-color: green; width:250px;">Neue PowerPoint</button></a>
+                <a href="uploadpp"><button class="main_bt" style="background-color: green; width:250px;">Neue PowerPoint</button></a>
                 <br><br><br>
                 <form action="inc/loggout_form.php" method="POST">
                     <input type="hidden" name="loggout" value="loggout">
@@ -43,7 +43,7 @@
                     while($row = $result->fetch_assoc()) {
                         ?>
                         <div style="margin-bottom:-30px; <?php /* border:1px solid black; width:200px */?>">    
-                            <a href="ppinfo.php?id=<?php echo $row["id"] ?>" class="profileMyPPs">
+                            <a href="ppinfo?id=<?php echo $row["id"] ?>" class="profileMyPPs">
                                 <p class="best_text" style="float:left; margin-bottom:-10px;"><b><span style="text-decoration:underline;"><?php echo $row["title"] ?></span>&nbsp;</b>
                             </a>
                             &nbsp;&nbsp;
